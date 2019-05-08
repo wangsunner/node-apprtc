@@ -12,6 +12,8 @@ See the demo [here](https://demo-node-apprtc.herokuapp.com)
 $ git clone https://github.com/wangsunner/node-apprtc
 $ cd node-apprtc
 $ npm install
+
+iptables -I INPUT -p tcp --dport 1360 -j ACCEPT
 ```
 
 ## Run node-apprtc
