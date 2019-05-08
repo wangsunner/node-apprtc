@@ -1,8 +1,8 @@
 var fs = require('fs');
 
 var tls = {
-  key: fs.readFileSync('./server.key'),
-  cert: fs.readFileSync('./server.crt')
+  key: fs.readFileSync('./config/server.key'),
+  cert: fs.readFileSync('./config/server.crt')
 };
 
 module.exports = {
