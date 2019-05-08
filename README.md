@@ -9,7 +9,7 @@ See the demo [here](https://demo-node-apprtc.herokuapp.com)
 
 ## Setup
 ```
-$ git clone https://github.com/MidEndProject/node-apprtc
+$ git clone https://github.com/wangsunner/node-apprtc
 $ cd node-apprtc
 $ npm install
 ```
