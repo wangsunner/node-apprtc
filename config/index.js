@@ -1,3 +1,10 @@
+var fs = require('fs');
+
+var tls = {
+  key: fs.readFileSync('./server.key'),
+  cert: fs.readFileSync('./server.crt')
+};
+
 module.exports = {
   constant: {
     LOOPBACK_CLIENT_ID: 'LOOPBACK_CLIENT_ID',
@@ -10,7 +17,8 @@ module.exports = {
     RESPONSE_DUPLICATE_CLIENT: 'DUPLICATE_CLIENT',
   },
   server: {
-    host: '127.0.0.1',
-    port: process.env.PORT || 4567
+    host: '0.0.0.0',
+    port: 1360,
+    tls: tls
   }
 };
